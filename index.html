@@ -1,1 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Rento Parts</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f6f8;
+    color: #222;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.delivery {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+.search {
+    margin-top: 18px;
+    background: white;
+    color: #777;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.banner {
+    margin: 18px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.banner h2 {
+    font-size: 21px;
+}
+
+.banner p {
+    margin-top: 7px;
+    color: #666;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    padding: 0 18px;
+    overflow-x: auto;
+}
+
+.category {
+    min-width: 105px;
+    background: white;
+    padding: 18px 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.category .icon {
+    font-size: 30px;
+}
+
+.category p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.section {
+    padding: 22px 18px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 18px 80px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.product-image {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    background: #f3f4f6;
+    border-radius: 12px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.price {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.add {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 9px;
+    background: #111827;
+    color: white;
+    font-weight: bold;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 5px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.bottom div {
+    text-align: center;
+    font-size: 12px;
+}
+
+.bottom span {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="logo">🏍️ Rento Parts</div>
+
+    <div class="delivery">
+        📍 Delivering near you
+    </div>
+
+    <div class="search">
+        🔍 Search bike, scooty or EV parts
+    </div>
+
+</div>
+
+<div class="banner">
+    <h2>⚡ Parts delivered in 30 minutes</h2>
+    <p>Bike • Scooty • EV Scooty spare parts</p>
+</div>
+
+<div class="categories">
+
+    <div class="category">
+        <div class="icon">🏍️</div>
+        <p>Bike Parts</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">🛵</div>
+        <p>Scooty Parts</p>
+    </div>
+
+    <div class="category">
+        <div class="icon">⚡</div>
+        <p>EV Parts</p>
+    </div>
+
+</div>
+
+<div class="section">
+    Popular Parts
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <div class="product-image">🛞</div>
+        <h3>Brake Shoe</h3>
+        <div class="price">₹299</div>
+        <button class="add">ADD</button>
+    </div>
+
+    <div class="product">
+        <div class="product-image">🔧</div>
+        <h3>Engine Oil</h3>
+        <div class="price">₹499</div>
+        <button class="add">ADD</button>
+    </div>
+
+    <div class="product">
+        <div class="product-image">⚙️</div>
+        <h3>Drive Belt</h3>
+        <div class="price">₹699</div>
+        <button class="add">ADD</button>
+    </div>
+
+    <div class="product">
+        <div class="product-image">🔋</div>
+        <h3>EV Charger</h3>
+        <div class="price">₹1,499</div>
+        <button class="add">ADD</button>
+    </div>
+
+</div>
+
+<div class="bottom">
+
+    <div>
+        <span>🏠</span>
+        Home
+    </div>
+
+    <div>
+        <span>📦</span>
+        Orders
+    </div>
+
+    <div>
+        <span>🛒</span>
+        Cart
+    </div>
+
+    <div>
+        <span>👤</span>
+        Account
+    </div>
+
+</div>
+
+</body>
+</html>
